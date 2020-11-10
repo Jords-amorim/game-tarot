@@ -2,15 +2,14 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 
 // Importação Componentes e Página
-import CardList from './CardList'
+import Home from './Home';
 
-const rootComponent = document.getElementById("root")
 ReactDOM.render(
-    <>
-    <h1> Jogo de Tarot </h1>
-    <CardList/>    
-    </>
-    , rootComponent )
+    <React.StrictMode>
+      <Home/>
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
 
 
 

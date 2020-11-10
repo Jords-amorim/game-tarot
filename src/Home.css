@@ -1,0 +1,51 @@
+/* Corpo da página - Fundo e características gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    /* Fundo */
+    height: 100vh;
+    /* Color Font */
+    /* color: white; */
+  }
+  
+  :root {
+    font-size: 62, 5%;
+  }
+  
+  /* Declarações */
+  body,
+  input,
+  button,
+  textarea {
+    /* Font */
+    font: 400 1.3rem/1 "Nunito", sans-serif;
+  }
+.pageLading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+aside  {
+    width: clamp(16rem, 18vw, 24rem);
+    background: linear-gradient(200.20deg, #af4c0b 0%, #ffffffd8 100%);
+    padding: clamp(3rem, 5vw, 7rem);
+    /* Organization Childrens */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+ main {
+     display: grid;
+     grid-template-columns: repeat(6, 40px);
+     grid-template-rows: repeat(10, 150px);
+     justify-content: space-between;
+    
+     
+     
+
+  }  
