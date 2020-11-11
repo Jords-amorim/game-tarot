@@ -36,7 +36,7 @@ class Home extends React.Component {
           <footer>
             <strong> Feche os olhos e pense em uma pergunta. </strong>
             <p>
-              Pensou? Então, abra seus olhos. Agora, escolha uma carta. Tarot é
+              Pensou? Agora, escolha uma carta. Tarot é
               sobre sorte e azar, sobre partir ou ficar, sobre desistir ou
               continuar. Além disso, é sobre quem somos. Sobre quem somos de
               verdade. Quem é você?

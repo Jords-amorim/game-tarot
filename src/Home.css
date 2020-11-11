@@ -1,51 +1,101 @@
 /* Corpo da página - Fundo e características gerais */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    /* Fundo */
-    height: 100vh;
-    /* Color Font */
-    /* color: white; */
-  }
-  
-  :root {
-    font-size: 62, 5%;
-  }
-  
-  /* Declarações */
-  body,
-  input,
-  button,
-  textarea {
-    /* Font */
-    font: 400 1.3rem/1 "Nunito", sans-serif;
-  }
-.pageLading{
-    width: 100%;
-    height: 100%;
-    display: flex;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-aside  {
-    width: clamp(16rem, 18vw, 24rem);
-    background: linear-gradient(200.20deg, #af4c0b 0%, #ffffffd8 100%);
-    padding: clamp(3rem, 5vw, 7rem);
-    /* Organization Childrens */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
- main {
-     display: grid;
-     grid-template-columns: repeat(6, 40px);
-     grid-template-rows: repeat(10, 150px);
-     justify-content: space-between;
-    
-     
-     
+:root {
+  font-size: 62, 5%;
+}
 
-  }  
+/* Declarações */
+body,
+input,
+button,
+textarea {
+  /* Font */
+  font: 400 1.2rem/1 "Nunito", sans-serif;
+}
+
+/* Carregamento da Página*/
+.pageLading {
+  width: 100%;
+
+  display: flex;
+}
+
+/*---------------- Container lateral esquerdo -----------*/
+/* Container */
+aside {
+  width: clamp(16rem, 22vw, 25rem);
+  height: auto;
+  background: linear-gradient(300.2deg, #ec7d3c 0%, #bd4a07 100%);
+  padding: clamp(1.5rem, 1vw, 3rem);
+  /* Organization Childrens */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+header h1,
+footer,h6 {
+  color: bisque;
+}
+
+/* Título container Lateral */
+header h1 {
+  font: 700 clamp(1.5rem, 5vw, 2.5rem) / 1.1 "Nunito, sans-serif";
+  margin-top: 3rem;
+}
+
+/* Botão Iniciar Jogo container Lateral */
+header button {
+  background: #eccab6;
+  width: 10rem;
+  height: 3.2rem;
+  margin-top: 8rem;
+  border: 0;
+  border-radius: 0.8rem;
+}
+/* Animação Botão Iniciar  */
+header button:hover {
+  background: #d38c62;
+  transition: background-color 200ms;
+  font-size: 1.3rem;
+}
+
+/*----------------- Rodapé ----------------------------*/
+footer {
+  margin-bottom: 5rem;
+}
+
+footer strong {
+  font-size: clamp(1.2rem, 2vw, 1.3vw);
+}
+
+footer p {
+  margin-top: 3rem;
+}
+
+/*---------------- Container Principal ---------------*/
+main {
+  /* Imagem Hero */
+  
+  background-image: url(./images/hero-taro.jpg);
+  background-size: 80vw 50vmax, auto 80vmax;
+  padding: clamp(2rem, 4vw, 5.5rem);
+  /* Organization Childrens */
+  display: grid;
+  grid-template-columns: repeat(16, 90px);
+  grid-template-rows: repeat(5, 160px);
+  text-align: center;
+  
+}
+
+img {
+  margin-top: 0.5rem;
+  width: 65%;
+  
+}
