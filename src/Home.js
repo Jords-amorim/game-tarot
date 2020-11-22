@@ -31,7 +31,7 @@ class Home extends React.Component {
         <aside className="animationRight">
           <header>
             <h1> Jogo de Tarot </h1>
-            <button>Iniciar o Jogo</button>
+           
           </header>
           <footer>
             <strong> Feche os olhos e pense em uma pergunta. </strong>
@@ -44,7 +44,7 @@ class Home extends React.Component {
           </footer>
         </aside>
         <main className="taroCards">
-          <Taro taro={this.state.taro} />
+        {this.state.taro && this.state.taro.cards && this.state.taro.cards.length && <Taro taro={this.state.taro} />}
         </main>
       </div>
     );
